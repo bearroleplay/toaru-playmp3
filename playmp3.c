@@ -16,6 +16,7 @@
  * THIS SOFTWARE.
  */
 
+#include <stdint.h>   // <-- ДОБАВЛЕНО
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -45,7 +46,6 @@ static void print_id3_string(size_t len, uint8_t type, uint8_t * data) {
 	} else {
 		printf("(unsupported ID3 tag encoding: %d)\n", type);
 	}
-
 }
 
 int main(int argc, char * argv[]) {
